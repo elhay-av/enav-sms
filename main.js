@@ -139,5 +139,6 @@ $( document ).ready(function() {
   $('.download').on('click', sendMessages);
   $('#sheet-link')[0].value = decodeURIComponent(urlParams['data-table-link']);
   $('#form-link')[0].value = decodeURIComponent(urlParams['form-link']);
+  $('#sms-res')[0].value = urlParams['phone'];
   console.log( "ready!" );
 });
