@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./main.css"/>
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="./main.js"></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<h1>
+			נוכחות תושבים - צח״י ענב
+		</h1>
+
+		<h2 class="status"></h2>
+
+
+		<div class="input">
+			<label for="sms-res">
+				<div class="title">Cellact response</div>
+			</label>
+			<input type="text" name="sms-res" class="field small" id="sms-res" placeholder="מספר טלפון להשבה"/>
+		</div>
+
+		<div class="input">
+			<label for="message">
+				<div class="title">
+					הודעת SMS לשליחה לתושבים
+				</div>
+				<div class="desc">* יש להשאיר את ה {LINK} כמו שהוא</div>
+			</label>
+			<textarea name="message" class="field" id="message" cols="50" rows="8">
+	שלום וברכה,
+	הופעל נוהל בדיקת נוכחות, אנא מלא/י את הפרטים בשאלון המצורף במהירות האפשרית.
+	{LINK}
+	צוות צח"י ענב
+	תודה.
+	  </textarea>
+		</div>
+
+
+		<div class="input">
+			<label for="form-link">
+				<div class="title">
+					קישור ל Google Form
+				</div>
+			</label>
+			<input name="form-link" class="field" id="form-link"
+			       placeholder="https://docs.google.com/forms/d/e/1FAIpQLSef7dm0AEI6.../viewform">
+			<iframe src="https://drive.google.com/file/d/1j7unpWudduNeZm8Cy0DryCJtLHyCBtpT/preview" width="650"
+			        height="480"></iframe>
+		</div>
+
+		<div class="input">
+			<label for="form-link">
+				<div class="title">
+					קישור ל Google Sheets המשוייך לטופס
+				</div>
+			</label>
+			<input name="sheet-link" class="field" id="sheet-link"
+			       placeholder="https://docs.google.com/spreadsheets/d/e/2PACX--.../pub?gid=1155642061&single=true&output=csv">
+			<iframe src="https://drive.google.com/file/d/1tLUwPOgkH9mxK6eur9oZQp7vr5mYTmp3/preview" width="650"
+			        height="480"></iframe>
+
+		</div>
+
+		<a href="#" class="download">שלח הודעות SMS</a>
+	</div>
+
+</body>
+</html>

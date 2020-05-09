@@ -1,0 +1,49 @@
+.wrapper {
+	direction: rtl;
+	text-align: center;
+	padding: 20px;
+}
+
+
+.input {
+	clear: both;
+	padding: 20px;
+}
+.field {
+	float: right;
+}
+input.small {
+	width: 200px;
+}
+.title {
+	font-weight: bold;
+}
+iframe {
+	float: left !important;
+}
+label {
+	float: right;
+	text-align: right;
+	padding-left: 20px;
+}
+
+input {
+	width: 50%;
+}
+
+.download:hover {
+	background: blue;
+}
+.download {
+	position: fixed;
+	top: 60px;
+	left: 20px;
+	width: 270px;
+	height: 40px;
+	background: #3f3fb3;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	line-height: 40px;
+	border-radius: 14px;
+}
