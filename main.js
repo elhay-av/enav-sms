@@ -127,7 +127,7 @@ const getSoapRequestXml = (_message, phones) => {
         <UseDefaultCallback>false</UseDefaultCallback>
         <Callback>${response_to}</Callback>
         <UseDefaultSignature>false</UseDefaultSignature>
-        <Signature>צוות צח"י</Signature>
+        <Signature>צוות צח"י ענב</Signature>
         <IsWap>false</IsWap>
         <TTS>0</TTS>
       </SMS>
@@ -137,8 +137,8 @@ const getSoapRequestXml = (_message, phones) => {
 }
 $( document ).ready(function() {
   $('.download').on('click', sendMessages);
-  $('#sheet-link')[0].value = decodeURIComponent(urlParams['data-table-link']);
-  $('#form-link')[0].value = decodeURIComponent(urlParams['form-link']);
-  $('#sms-res')[0].value = urlParams['phone'];
+  $('#sheet-link')[0].value = decodeURIComponent(urlParams['data-table-link'] || '') || '';
+  $('#form-link')[0].value = decodeURIComponent(urlParams['form-link'] || '') || '';
+  $('#sms-res')[0].value = urlParams['phone'] || '';
   console.log( "ready!" );
 });
