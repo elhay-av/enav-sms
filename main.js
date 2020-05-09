@@ -78,7 +78,8 @@ const sendMessages = async () => {
     let res = '';
     try {
       res = await new Promise((resolve, reject) => {
-        $.post({
+        $.ajax({
+          type: 'POST',
           url: 'https://cors-anywhere.herokuapp.com/https://cellactpro.net/mewsext/wssend.asmx',
           dataType: "xml",
           data: getSoapRequestXml(item.message, item.phones),
